@@ -3,10 +3,16 @@ $frost-subcontext-actions-button-shadow: $frost-color-grey-6;
 $frost-subcontext-actions-button-icon: $frost-color-grey-4;
 $frost-subcontext-actions-button-icon-selected: $frost-color-blue-1;
 $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
+$frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
+@keyframes frost-subcontext-actions-label-animation-out {
+  from {
+    right: 0%;
+  }
 
-@keyframes frost-subcontext-actions-label-animation {
-  from {right: 0%;}
-  to {right: 170%;}
+  to {
+    right: 170%;
+  }
+
 }
 
 .frost-subcontext-actions {
@@ -19,44 +25,51 @@ $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
 }
 
 .frost-subcontext-actions-button {
-  position: relative;
   display: inline-block;
+  position: relative;
+
   &:focus {
     outline: none;
+
+    .frost-icon {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
   }
-  &:focus .frost-icon {
-    outline: -webkit-focus-ring-color auto 5px;
-  }
+
   .frost-icon {
     width: 30px;
     height: 30px;
     color: $frost-color-blue-1;
   }
+
   .frost-subcontext-actions-label {
-    background-color: rgba(0, 0, 0, 0.65);
-    border-radius: 2px;
-    color: $frost-color-white;
-    font-size: $frost-font-m;
-    padding: 8px 15px 6px 15px;
     position: absolute;
-    text-align: center;
     right: 170%;
     height: 35px;
     max-height: 35px;
+    padding: 8px 15px 6px;
+    border-radius: 2px;
+    background-color: $frost-subcontext-actions-label-background;
+    color: $frost-color-white;
+    font-size: $frost-font-m;
+    text-align: center;
     white-space: nowrap;
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
     z-index: -1;
+  }
+
+  &:hover {
+    .frost-subcontext-actions-label {
+      opacity: 1;
+      visibility: visible;
+      animation-name: frost-subcontext-actions-label-animation-out;
+      animation-duration: .15s;
+    }
   }
 }
 
-.frost-subcontext-actions-button + .frost-subcontext-actions-button {
+.frost-subcontext-actions-button+.frost-subcontext-actions-button {
   margin-top: 20px;
-}
-
-.frost-subcontext-actions-button:hover .frost-subcontext-actions-label {
-  animation-name: frost-subcontext-actions-label-animation;
-  animation-duration: 1s;
-  visibility: visible;
-  opacity: 1;
 }

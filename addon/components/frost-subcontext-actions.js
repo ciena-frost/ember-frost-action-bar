@@ -29,8 +29,8 @@ export default Component.extend({
       icon: PropTypes.shape({
         name: PropTypes.string.isRequired,
         pack: PropTypes.string
-      }),
-    },{required: true}),{required: true}),
+      })
+    }).isRequired).isRequired,
 
     // Options
     onDispatch: PropTypes.func

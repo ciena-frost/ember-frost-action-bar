@@ -1,7 +1,7 @@
 import Ember from 'ember'
-const {Logger} = Ember
+const {Controller, Logger} = Ember
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   actions: {
     dispatch (action) {
       const {type} = action
@@ -10,8 +10,8 @@ export default Ember.Controller.extend({
           Logger.warn(`Unknown action dispatched: ${type}`)
       }
     },
-    doSomething (){
+    doSomething () {
       Logger.info('hello')
     }
   }
-});
+})

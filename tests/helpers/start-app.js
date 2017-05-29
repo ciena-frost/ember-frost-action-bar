@@ -1,18 +1,20 @@
-import Ember from 'ember';
-import Application from '../../app';
-import config from '../../config/environment';
+import Ember from 'ember'
+const {merge, run} = Ember
 
-export default function startApp(attrs) {
-  let application;
+import Application from '../../app'
+import config from '../../config/environment'
 
-  let attributes = Ember.merge({}, config.APP);
-  attributes = Ember.merge(attributes, attrs); // use defaults, but you can override;
+export default function startApp (attrs) {
+  let application
 
-  Ember.run(() => {
-    application = Application.create(attributes);
-    application.setupForTesting();
-    application.injectTestHelpers();
-  });
+  let attributes = merge({}, config.APP)
+  attributes = merge(attributes, attrs) // use defaults, but you can override
 
-  return application;
+  run(() => {
+    application = Application.create(attributes)
+    application.setupForTesting()
+    application.injectTestHelpers()
+  })
+
+  return application
 }

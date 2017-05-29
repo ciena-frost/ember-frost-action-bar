@@ -1,25 +1,24 @@
-import { moduleForComponent, test } from 'ember-qunit';
-import hbs from 'htmlbars-inline-precompile';
+import {expect} from 'chai'
+import {setupComponentTest} from 'ember-mocha'
+import hbs from 'htmlbars-inline-precompile'
+import {describe, it} from 'mocha'
 
-moduleForComponent('frost-subcontext-actions', 'Integration | Component | frost subcontext actions', {
-  integration: true
-});
+describe('Integration | Component | frost subcontext actions', function () {
+  setupComponentTest('frost-subcontext-actions', {
+    integration: true
+  })
 
-test('it renders', function(assert) {
+  it('renders', function () {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+    // Template block usage:
+    // this.render(hbs`
+    //   {{#frost-subcontext-actions}}
+    //     template content
+    //   {{/frost-subcontext-actions}}
+    // `);
 
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
-  this.render(hbs`{{frost-subcontext-actions}}`);
-
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#frost-subcontext-actions}}
-      template block text
-    {{/frost-subcontext-actions}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
-});
+    this.render(hbs`{{frost-subcontext-actions}}`)
+    expect(this.$()).to.have.length(1)
+  })
+})

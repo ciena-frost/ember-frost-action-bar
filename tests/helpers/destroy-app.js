@@ -1,5 +1,8 @@
-import Ember from 'ember';
+/* global server */
+import Ember from 'ember'
+const {run} = Ember
 
-export default function destroyApp(application) {
-  Ember.run(application, 'destroy');
+export default function destroyApp (application) {
+  run(application, 'destroy')
+  server.shutdown()
 }
