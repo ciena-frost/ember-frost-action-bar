@@ -19,6 +19,7 @@ export default Component.extend({
   propTypes: {
     // Required
     subcontentActions: PropTypes.arrayOf(PropTypes.shape({
+      label: PropTypes.string.isRequired,
       action: PropTypes.oneOfType([
         PropTypes.func,
         PropTypes.shape({

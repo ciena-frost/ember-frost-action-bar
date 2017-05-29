@@ -14,13 +14,32 @@ $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
 }
 
 .frost-subcontext-actions-button {
+  position: relative;
+  display: inline-block;
   .frost-icon {
     width: 30px;
     height: 30px;
     color: $frost-color-blue-1;
   }
+  .frost-subcontext-actions-label {
+    background-color: $frost-color-grey-4;
+    color: $frost-color-white;
+    font-size: $frost-font-m;
+    padding: 7px 15px;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    right: 170%;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .frost-subcontext-actions-button + .frost-subcontext-actions-button {
   margin-top: 20px;
+}
+
+.frost-subcontext-actions-button:hover .frost-subcontext-actions-label {
+  visibility: visible;
+  opacity: 1;
 }
