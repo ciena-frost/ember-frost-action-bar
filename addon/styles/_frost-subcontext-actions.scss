@@ -21,6 +21,12 @@ $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
 .frost-subcontext-actions-button {
   position: relative;
   display: inline-block;
+  &:focus {
+    outline: none;
+  }
+  &:focus .frost-icon {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
   .frost-icon {
     width: 30px;
     height: 30px;
