@@ -9,6 +9,9 @@ export default Ember.Controller.extend({
         default:
           Logger.warn(`Unknown action dispatched: ${type}`)
       }
+    },
+    doSomething (){
+      Logger.info('hello')
     }
   }
 });

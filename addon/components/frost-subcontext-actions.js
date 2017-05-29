@@ -19,17 +19,17 @@ export default Component.extend({
   propTypes: {
     // Required
     subcontentActions: PropTypes.arrayOf(PropTypes.shape({
-      action: PropTypes.oneOfType[
+      action: PropTypes.oneOfType([
         PropTypes.func,
         PropTypes.shape({
           type: PropTypes.string.isRequired
         })
-      ],
+      ]),
       icon: PropTypes.shape({
         name: PropTypes.string.isRequired,
         pack: PropTypes.string
-      }).isRequired,
-    })).isRequired,
+      }),
+    },{required: true}),{required: true}),
 
     // Options
     onDispatch: PropTypes.func
@@ -44,7 +44,7 @@ export default Component.extend({
 
       // State defaults
     }
-  },
+  }
 
   // == Computed Properties ===================================================
 
@@ -55,8 +55,5 @@ export default Component.extend({
   // == Lifecycle Hooks =======================================================
 
   // == Actions ===============================================================
-
-  actions: {
-  }
 
 })
