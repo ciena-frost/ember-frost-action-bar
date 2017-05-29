@@ -4,6 +4,11 @@ $frost-subcontext-actions-button-icon: $frost-color-grey-4;
 $frost-subcontext-actions-button-icon-selected: $frost-color-blue-1;
 $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
 
+@keyframes frost-subcontext-actions-label-animation {
+  from {right: 0%;}
+  to {right: 170%;}
+}
+
 .frost-subcontext-actions {
   width: 60px;
   height: 100%;
@@ -22,16 +27,20 @@ $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
     color: $frost-color-blue-1;
   }
   .frost-subcontext-actions-label {
-    background-color: $frost-color-grey-4;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 2px;
     color: $frost-color-white;
     font-size: $frost-font-m;
-    padding: 7px 15px;
+    padding: 8px 15px 6px 15px;
     position: absolute;
     text-align: center;
-    top: -5px;
     right: 170%;
+    height: 35px;
+    max-height: 35px;
+    white-space: nowrap;
     visibility: hidden;
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -40,6 +49,8 @@ $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
 }
 
 .frost-subcontext-actions-button:hover .frost-subcontext-actions-label {
+  animation-name: frost-subcontext-actions-label-animation;
+  animation-duration: 2s;
   visibility: visible;
   opacity: 1;
 }
