@@ -6,24 +6,24 @@ $frost-subcontext-actions-button-icon-active: $frost-color-blue-1;
 $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 @keyframes frost-subcontext-actions-label-animation-out {
   from {
-    right: 0%;
+    opacity: 0;
   }
 
   to {
-    right: 170%;
+    opacity: 1;
   }
 
 }
 
 @keyframes frost-subcontext-actions-label-animation-in {
   to {
-    right: 0%;
+    // right: 0%;
     opacity: 0;
     visibility: hidden;
   }
 
   from {
-    right: 170%;
+    // right: 170%;
     opacity: 1;
     visibility: visible;
   }
