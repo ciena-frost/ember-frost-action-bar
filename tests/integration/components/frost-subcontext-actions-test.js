@@ -1,5 +1,4 @@
 import {expect} from 'chai'
-import {$hook} from 'ember-hook'
 import {setupComponentTest} from 'ember-mocha'
 import hbs from 'htmlbars-inline-precompile'
 import {beforeEach, describe, it} from 'mocha'
