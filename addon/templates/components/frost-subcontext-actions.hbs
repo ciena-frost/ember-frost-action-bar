@@ -3,11 +3,11 @@
 {{#each subcontentActions as |subcontentAction|}}
   {{#if subcontentAction.action.type}}
     <button
-      class={{concat css '-button'}}
+      class={{concat css '-button frost-button tertiary'}}
       data-test={{hook (concat hookPrefix '-button')}}
       {{action (action onDispatch subcontentAction.action) on='click'}}
     >
-      <span class={{concat css '-label'}}> {{subcontentAction.label}} </span>      
+      <div class={{concat css '-label'}}> {{subcontentAction.label}} </div>      
       {{frost-icon
         hook=(concat hookPrefix '-buttonIcon')
         icon=subcontentAction.icon.name
@@ -16,11 +16,11 @@
     </button>
   {{else}}
     <button
-      class={{concat css '-button'}}
+      class={{concat css '-button frost-button tertiary'}}
       data-test={{hook (concat hookPrefix '-button')}}
       {{action (action subcontentAction.action) on='click'}}
     >
-      <span class={{concat css '-label'}}> {{subcontentAction.label}} </span>      
+      <div class={{concat css '-label'}}> {{subcontentAction.label}} </div>      
       
       {{frost-icon
         hook=(concat hookPrefix '-buttonIcon')
