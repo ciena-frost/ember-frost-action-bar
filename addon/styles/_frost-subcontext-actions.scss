@@ -31,7 +31,7 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 .frost-subcontext-actions {
   width: 60px;
   height: 100%;
-  padding: 20px 15px;
+  padding: 20px 5px;
   border-left: 1px solid $frost-color-blue-1;
   background-color: $frost-color-white;
 }
@@ -39,7 +39,9 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 .frost-subcontext-actions-button {
   display: flex;
   position: relative;
-
+  width: 50px;
+  height: 50px;
+  padding: 10px;
   .frost-icon {
     width: 30px;
     height: 30px;
@@ -50,13 +52,13 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
     display: none;
     position: absolute;
     right: 50px;
-    height: 35px;
-    max-height: 35px;
-    padding: 8px 15px 6px;
-    border-radius: 2px;
+    height: 30px;
+    max-height: 30px;
+    padding: 8px 10px 6px;
+    border-radius: 4px;
     background-color: $frost-subcontext-actions-label-background;
     color: $frost-color-white;
-    font-size: $frost-font-m;
+    font-size: $frost-font-s;
     text-align: center;
     white-space: nowrap;
     opacity: 0;
@@ -78,5 +80,5 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 }
 
 .frost-subcontext-actions-button + .frost-subcontext-actions-button {
-  margin-top: 20px;
+  margin-top: 5px;
 }
