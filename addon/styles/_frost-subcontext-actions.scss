@@ -39,19 +39,23 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 .frost-subcontext-actions-button {
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   padding: 10px;
+
   .frost-icon {
     width: 30px;
     height: 30px;
     color: $frost-color-blue-1;
   }
 
-  .frost-subcontext-actions-label {
+  + .frost-subcontext-actions-label {
     display: none;
     position: absolute;
-    right: 50px;
+    margin-right: 5px;
+    right: 60px;
     height: 30px;
     max-height: 30px;
     padding: 8px 10px 6px;
@@ -69,7 +73,7 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
   }
 
   &:hover {
-    .frost-subcontext-actions-label {
+    + .frost-subcontext-actions-label {
       display: initial;
       opacity: 1;
       visibility: visible;
@@ -81,4 +85,10 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 
 .frost-subcontext-actions-button + .frost-subcontext-actions-button {
   margin-top: 5px;
+}
+
+.frost-subcontext-actions-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
