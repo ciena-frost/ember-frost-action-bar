@@ -1,35 +1,129 @@
-/* eslint-env node */
 module.exports = {
   scenarios: [
     {
-      name: 'ember-lts-2.4',
+      name: 'default',
+      npm: {
+        dependencies: {}
+      }
+    },
+    {
+      name: 'ember-1-12',
       bower: {
         dependencies: {
-          'ember': 'components/ember#lts-2-4'
+          'ember': '~1.12.0'
         },
         resolutions: {
-          'ember': 'lts-2-4'
-        }
-      },
-      npm: {
-        devDependencies: {
-          'ember-source': null
+          'ember': '~1.12.0'
         }
       }
     },
     {
-      name: 'ember-lts-2.8',
+      name: 'ember-1-13',
       bower: {
         dependencies: {
-          'ember': 'components/ember#lts-2-8'
+          'ember': '~1.13.0'
         },
         resolutions: {
-          'ember': 'lts-2-8'
+          'ember': '~1.13.0'
         }
-      },
-      npm: {
-        devDependencies: {
-          'ember-source': null
+      }
+    },
+    {
+      name: 'ember-2-0',
+      bower: {
+        dependencies: {
+          'ember': '~2.0.0'
+        },
+        resolutions: {
+          'ember': '~2.0.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-1',
+      bower: {
+        dependencies: {
+          'ember': '~2.1.0'
+        },
+        resolutions: {
+          'ember': '~2.1.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-2',
+      bower: {
+        dependencies: {
+          'ember': '~2.2.0'
+        },
+        resolutions: {
+          'ember': '~2.2.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-3',
+      bower: {
+        dependencies: {
+          'ember': '~2.3.0'
+        },
+        resolutions: {
+          'ember': '~2.3.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-4',
+      bower: {
+        dependencies: {
+          'ember': '~2.4.0'
+        },
+        resolutions: {
+          'ember': '~2.4.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-5',
+      bower: {
+        dependencies: {
+          'ember': '~2.5.0'
+        },
+        resolutions: {
+          'ember': '~2.5.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-6',
+      bower: {
+        dependencies: {
+          'ember': '~2.6.0'
+        },
+        resolutions: {
+          'ember': '~2.6.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-8',
+      bower: {
+        dependencies: {
+          'ember': '~2.8.0'
+        },
+        resolutions: {
+          'ember': '~2.8.0'
+        }
+      }
+    },
+    {
+      name: 'ember-2-9',
+      bower: {
+        dependencies: {
+          'ember': '~2.9.0'
+        },
+        resolutions: {
+          'ember': '~2.9.0'
         }
       }
     },
@@ -80,12 +174,6 @@ module.exports = {
           'ember-source': null
         }
       }
-    },
-    {
-      name: 'ember-default',
-      npm: {
-        devDependencies: {}
-      }
     }
   ]
-};
+}

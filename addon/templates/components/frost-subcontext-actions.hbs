@@ -1,0 +1,34 @@
+{{! Template for the frost-detail-tab-actions component }}
+{{#each subcontentActions as |subcontentAction|}}
+  {{#if subcontentAction.action.type}}
+    <div class= {{concat css '-button-wrapper'}}>
+      <button
+        class={{concat css '-button frost-button tertiary'}}
+        data-test={{hook (concat hookPrefix '-button')}}
+        {{action (action onDispatch subcontentAction.action) on='click'}}
+      >
+        {{frost-icon
+          hook=(concat hookPrefix '-buttonIcon')
+          icon=subcontentAction.icon.name
+          pack=subcontentAction.icon.pack
+        }}
+      </button>
+      <div class={{concat css '-label'}}> {{subcontentAction.label}} </div>          
+    </div>
+  {{else}}
+    <div class= {{concat css '-button-wrapper'}}>
+      <button
+        class={{concat css '-button frost-button tertiary'}}
+        data-test={{hook (concat hookPrefix '-button')}}
+        {{action (action subcontentAction.action) on='click'}}
+      >
+        {{frost-icon
+          hook=(concat hookPrefix '-buttonIcon')
+          icon=subcontentAction.icon.name
+          pack=subcontentAction.icon.pack
+        }}
+      </button>
+      <div class={{concat css '-label'}}> {{subcontentAction.label}} </div>        
+    </div>
+  {{/if}}
+{{/each}}

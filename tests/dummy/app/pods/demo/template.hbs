@@ -1,0 +1,22 @@
+{{frost-subcontext-actions
+  hook='subcontext-actions'
+  subcontentActions=(array
+    (hash
+      label='Do something'
+      action=(action "doSomething")
+      icon=(hash
+        pack='frost'
+        name='round-add'
+      )
+    )
+    (hash
+      label='Action type'
+      action=(hash type="string")
+      icon=(hash
+        pack='frost'
+        name='round-add'
+      )
+    )
+  )
+  onDispatch=dispatch
+}}
