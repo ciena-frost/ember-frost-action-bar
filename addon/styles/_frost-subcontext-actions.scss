@@ -17,13 +17,11 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 
 @keyframes frost-subcontext-actions-label-animation-in {
   to {
-    // right: 0%;
     opacity: 0;
     visibility: hidden;
   }
 
   from {
-    // right: 170%;
     opacity: 1;
     visibility: visible;
   }
@@ -33,7 +31,6 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
 .frost-subcontext-actions {
   width: 60px;
   height: 100%;
-  margin-left: auto;
   padding: 20px 15px;
   border-left: 1px solid $frost-color-blue-1;
   background-color: $frost-color-white;
@@ -66,7 +63,7 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
     visibility: hidden;
     z-index: -1;
     animation-name: frost-subcontext-actions-label-animation-in;
-    animation-duration: .15s;
+    animation-duration: .3s;
   }
 
   &:hover {
@@ -75,11 +72,11 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
       opacity: 1;
       visibility: visible;
       animation-name: frost-subcontext-actions-label-animation-out;
-      animation-duration: .45s;
+      animation-duration: .3s;
     }
   }
 }
 
-.frost-subcontext-actions-button+.frost-subcontext-actions-button {
+.frost-subcontext-actions-button + .frost-subcontext-actions-button {
   margin-top: 20px;
 }

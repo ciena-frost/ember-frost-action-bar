@@ -30,7 +30,7 @@ export default Component.extend({
         name: PropTypes.string.isRequired,
         pack: PropTypes.string
       })
-    }).isRequired).isRequired,
+    })).isRequired,
 
     // Options
     onDispatch: PropTypes.func
