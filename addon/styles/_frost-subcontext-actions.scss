@@ -54,10 +54,10 @@ $frost-subcontext-actions-label-background: rgba(0, 0, 0, .65);
   + .frost-subcontext-actions-label {
     display: none;
     position: absolute;
-    margin-right: 5px;
     right: 60px;
     height: 30px;
     max-height: 30px;
+    margin-right: 5px;
     padding: 8px 10px 6px;
     border-radius: 4px;
     background-color: $frost-subcontext-actions-label-background;
