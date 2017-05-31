@@ -1,13 +1,13 @@
 import {expect} from 'chai'
-import {setupComponentTest} from 'ember-mocha'
+import {$hook} from 'ember-hook'
+import {integration} from 'ember-test-utils/test-support/setup-component-test'
 import hbs from 'htmlbars-inline-precompile'
 import {beforeEach, describe, it} from 'mocha'
 import sinon from 'sinon'
+const test = integration('frost-subcontext-actions')
 
-describe('Integration | Component | frost subcontext actions', function () {
-  setupComponentTest('frost-subcontext-actions', {
-    integration: true
-  })
+describe(test.label, function () {
+  test.setup()
 
   describe('when onClick is given and button is clicked', function () {
     let dispatchHandler, handler
@@ -42,7 +42,7 @@ describe('Integration | Component | frost subcontext actions', function () {
 
       `)
 
-      this.$('button').click()
+      $hook('subcontext-actions-button').click()
     })
 
     it('should call the handler', function () {
