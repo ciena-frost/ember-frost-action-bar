@@ -44,7 +44,12 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/ember-frost-action-bar'
+    ENV.isDemo = true
+    ENV.mirageNamespace = 'https://ciena-frost.github.io'
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    }
   }
 
   return ENV
