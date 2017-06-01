@@ -56,7 +56,7 @@ matrix:
   fast_finish: true
   allow_failures:
   - env: EMBER_TRY_SCENARIO=ember-release
-
+  - node_js: 'stable'
 before_deploy:
 - pr-bumper bump
 deploy:
