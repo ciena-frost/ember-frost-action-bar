@@ -46,7 +46,7 @@
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-elsewhere": "~1.0.1",
     "ember-export-application-global": "^1.0.5",
-    "ember-frost-core": "1.23.5",
+    "ember-frost-core": "1.23.10",
     "ember-frost-test": "2.0.0",
     "ember-hook": "^1.4.2",
     "ember-load-initializers": "^0.6.0",
