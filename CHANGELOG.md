@@ -1,3 +1,7 @@
+# 0.0.4 (2017-11-20)
+
+* #13 - Remove unused tslint and typescript dependencies
+
 # 0.0.3 (2017-08-11)
 
 * Upgrade ember-cli 2.12.3 inter-dependencies
