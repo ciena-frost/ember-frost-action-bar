@@ -25,6 +25,7 @@
     "ember-cli-sass": "6.2.0"
   },
   "devDependencies": {
+    "bower": "^1.8.2",
     "broccoli-asset-rev": "^2.4.5",
     "chai-jquery": "^2.0.0",
     "ember-ajax": "^2.4.1",
@@ -58,9 +59,7 @@
     "ember-test-utils": "4.3.2",
     "ember-truth-helpers": "^1.2.0",
     "loader.js": "^4.2.3",
-    "sinon-chai": "^2.10.0",
-    "tslint": "^4.5.1",
-    "typescript": "^2.0.0"
+    "sinon-chai": "^2.10.0"
   },
   "engines": {
     "node": ">= 6"
