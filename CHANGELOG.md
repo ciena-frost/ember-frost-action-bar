@@ -1,3 +1,13 @@
+# 1.0.0 (2017-12-06)
+* **Updated** to version 4 of `ember-frost-core` and move to dependency
+* **Updated** to version 5 of `ember-prop-types` and move to dependency
+* **Removed** `ember-spread` package since it is not used here and is now provided by `ember-frost-core` via it's own dependencies.
+* **Removed** `ember-computed-decorators` package since it is not used here and is now provided by `ember-frost-core` via it's own dependencies.
+* **Removed** `ember-concurrency` package since it is not used here and is now provided by `ember-frost-core` via it's own dependencies.
+* **Removed** `ember-elsewhere` package since it is not used here and is now provided by `ember-frost-core` via it's own dependencies.
+* **Updated** to version 4 of `ember-cli-frost-blueprints`
+* **Removed** `ember-truth-helpers` since it is not used in this add-on.
+
 # 0.0.4 (2017-11-20)
 
 * #13 - Remove unused tslint and typescript dependencies
