@@ -1,3 +1,6 @@
+# 1.0.1 (2017-12-06)
+* **Updated** `ember-hook` to be a dependency instead of a devDependency
+
 # 1.0.0 (2017-12-06)
 * **Updated** to version 4 of `ember-frost-core` and move to dependency
 * **Updated** to version 5 of `ember-prop-types` and move to dependency
