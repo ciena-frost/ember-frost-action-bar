@@ -25,7 +25,7 @@
     "ember-cli-sass": "6.2.0",
     "ember-frost-core": "^4.0.1",
     "ember-hook": "1.4.2",
-    "ember-prop-types": "^5.0.2"
+    "ember-prop-types": "^6.0.0"
   },
   "devDependencies": {
     "bower": "^1.8.2",
