@@ -1,3 +1,22 @@
+# 2.0.0 (2018-01-04)
+* **Added** the ignoring of linting of the `CHANGELOG.md` file
+* **Updated** `ember-frost-test` to version `^4.0.0`
+* **Updated** `ember-cli-chai` to version `0.4.3`
+* **Updated** `ember-cli-mocha` to version `0.14.4`
+* **Updated** `ember-test-utils` to `^8.1.0`
+* **Updated** `ember-hook` to `1.4.2` and moved to dependency
+* **Updated** `ember-sinon` to `^0.7.0`
+* **Updated** `sinon-chai` to version `^2.14.0`
+* **Removed** unused `ember-cli-sri` package
+* **Updated** `ember-cli-htmlbars-inline-precompile` to `0.3.12`
+* **Updated** `ember-cli-frost-blueprints` to `^5.0.1`
+* **Removed** unused `ember-ajax` package
+* **Updated** `ember-prop-types` to version `^6.0.1`
+* **Added** package-lock to the `.gitignore`files until we are ready to migrate to node 8
+* **Updated** `ember-cli-sass` to version `7.1.1`
+* **Updated** `ember-frost-core` to version `^5.0.0`
+
+
 # 1.0.1 (2017-12-06)
 * **Updated** `ember-hook` to be a dependency instead of a devDependency
 
