@@ -1,3 +1,8 @@
+# 4.0.1 (2018-07-20)
+
+* **Fixed** Travis API key.
+
+
 # 4.0.0 (2018-04-13)
 * **Updated** `ember-frost-core` to version `^8.0.0`
 
